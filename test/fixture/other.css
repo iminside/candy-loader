@@ -1,0 +1,12 @@
+.title {
+    font-size: 20px;
+
+    background-image: url('./images/avatar.jpg');
+    background-position: center left;
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+.active {
+    color: red;
+}

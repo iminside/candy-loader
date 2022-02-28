@@ -1,0 +1,62 @@
+{
+    "name": "candy-loader",
+    "description": "Load css as jsx components",
+    "version": "0.1.0",
+    "author": "Denis Churbanov",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/iminside/candy-loader.git"
+    },
+    "main": "dist/index.cjs.js",
+    "module": "dist/index.esm.js",
+    "typings": "dist/index.d.ts",
+    "scripts": {
+        "start": "rollup -c -w",
+        "build": "rollup -c",
+        "test": "npm run build && jest",
+        "test:coverage": "jest --coverage",
+        "test:uncache": "jest --clearCache",
+        "prepublishOnly": "npm run build"
+    },
+    "dependencies": {
+        "cosmiconfig": "^7.0.1",
+        "postcss": "^8.4.7",
+        "postcss-import": "^14.0.2",
+        "postcss-modules": "^4.3.1",
+        "postcss-url": "^10.1.3"
+    },
+    "peerDependencies": {
+        "react": "^15.0.0"
+    },
+    "devDependencies": {
+        "@babel/preset-react": "^7.16.7",
+        "@rollup/plugin-commonjs": "^21.0.2",
+        "@rollup/plugin-node-resolve": "^13.1.3",
+        "@types/jest": "^27.4.1",
+        "@types/postcss-import": "^14.0.0",
+        "@types/postcss-url": "^10.0.0",
+        "@types/react": "^17.0.39",
+        "@types/rollup-plugin-auto-external": "^2.0.2",
+        "babel-loader": "^8.2.3",
+        "file-loader": "^6.2.0",
+        "husky": "^7.0.4",
+        "jest": "^27.5.1",
+        "memfs": "^3.4.1",
+        "prettier": "^2.5.1",
+        "react": "^17.0.2",
+        "react-dom": "^17.0.2",
+        "rollup": "^2.68.0",
+        "rollup-plugin-auto-external": "^2.0.0",
+        "rollup-plugin-delete": "^2.0.0",
+        "rollup-plugin-typescript2": "^0.31.2",
+        "style-loader": "^3.3.1",
+        "ts-jest": "^27.1.3",
+        "typescript": "^4.5.5",
+        "webpack": "^5.69.1"
+    },
+    "files": [
+        "dist",
+        "src"
+    ]
+}

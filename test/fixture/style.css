@@ -1,0 +1,28 @@
+@import './other.css';
+
+.user {
+    display: flex;
+    align-items: center;
+}
+
+.avatar {
+    width: 40px;
+    height: 40px;
+    background-image: url('./images/avatar.jpg');
+    background-position: center left;
+    background-size: 40px;
+    background-repeat: no-repeat;
+}
+
+.name {
+    font-size: 20px;
+    color: black;
+}
+
+.message {
+    color: red;
+}
+
+.message.active {
+    background-color: gold;
+}
