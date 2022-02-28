@@ -16,7 +16,7 @@ npm i candy-loader
 
 Update the loaders in your `webpack.config.js` file.
 
-```json
+```js
 {
     rules: [
         {
