@@ -17,14 +17,14 @@ npm i candy-loader
 Update the loaders in your `webpack.config.js` file.
 
 ```json
-/*...*/
+{
     rules: [
         {
             test: /\.css$/,
             use: ['style-loader', 'candy-loader'],
         },
     ],
-/*...*/
+}
 ```
 
 ## Usage
