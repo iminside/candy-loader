@@ -1,8 +1,7 @@
 # Candy
 
 <div align="center">
-<img src="https://img.shields.io/github/workflow/status/iminside/candy-loader/Node.js%20CI/master" alt="GitHub Workflow Status (branch)" />
-<img src="https://img.shields.io/codecov/c/github/iminside/candy-loader" alt="codecov" />
+<img src="https://img.shields.io/github/workflow/status/iminside/candy-loader/Node.js%20CI/master" alt="GitHub Workflow Status (branch)" /> 
 <img src="https://img.shields.io/github/languages/top/iminside/candy-loader" alt="language" />
 <img src="https://img.shields.io/npm/l/candy-loader" alt="license" />  
 </div>
