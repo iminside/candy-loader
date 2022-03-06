@@ -1,7 +1,7 @@
 {
     "name": "candy-loader",
-    "description": "Load css as jsx components",
     "version": "0.1.1",
+    "description": "Load css as jsx components",
     "author": "Denis Churbanov",
     "license": "MIT",
     "repository": {
@@ -58,5 +58,9 @@
     "files": [
         "dist",
         "src"
+    ],
+    "keywords": [
+        "webpack",
+        "candy"
     ]
 }
