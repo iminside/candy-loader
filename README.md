@@ -36,11 +36,14 @@ Use classnames in camelCase mode
 ```css
 /* style.css */
 
-.message {
-    font-size: 16px;
+.badge {
+    color: white;
 }
-.active {
-    color: red;
+.coral {
+    background-color: coral;
+}
+.green {
+    background-color: green;
 }
 ```
 
@@ -49,15 +52,20 @@ Import any html tag as pure jsx-component from css file
 ```tsx
 import { Div } from './style.css'
 
-const App = () => {
+interface BadgeProps {
+    color: 'coral' | 'green'
+}
+
+const Badge = (props: BadgeProps) => {
+    const isCoral = props.color === 'coral'
+    const isGreen = props.color === 'green'
+
     return (
-        <Div message active={true}>
-            Hello World
+        <Div badge coral={isCoral} green={isGreen}>
+            Badge
         </Div>
     )
 }
-
-render(<App />, document.getElementById('app'))
 ```
 
 ## Based on `postcss`
