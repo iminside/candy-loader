@@ -1,4 +1,6 @@
-# Candy
+# Webpack Candy loader
+
+Load css files as pure jsx components with classnames as boolean props
 
 <div align="center">
 <img src="https://img.shields.io/github/workflow/status/iminside/candy-loader/Node.js%20CI/master" alt="GitHub Workflow Status (branch)" /> 
@@ -9,7 +11,7 @@
 ## Install
 
 ```bash
-npm i candy-loader
+npm i -D candy-loader
 ```
 
 ## Settings
@@ -29,7 +31,7 @@ Update the loaders in your `webpack.config.js` file.
 
 ## Usage
 
-Import any html tag as jsx-component from css file
+Use classnames in camelCase mode
 
 ```css
 // style.css
@@ -42,12 +44,14 @@ Import any html tag as jsx-component from css file
 }
 ```
 
+Import any html tag as pure jsx-component from css file
+
 ```tsx
 import { Div } from './style.css'
 
 const App = () => {
     return (
-        <Div message active={isMessageActive}>
+        <Div message active={true}>
             Hello World
         </Div>
     )
@@ -55,3 +59,24 @@ const App = () => {
 
 render(<App />, document.getElementById('app'))
 ```
+
+## Based on `postcss`
+
+You can use the usual postcss config file
+
+```js
+module.exports = {
+    plugins: {
+        // enable autoprefixer plugin
+        autoprefixer: false,
+    },
+    processOptions: {
+        // enable sourcemaps
+        map: true,
+    },
+}
+```
+
+## Intellisense
+
+Use [`typescript-plugin-candy`](https://github.com/iminside/typescript-plugin-candy) for type checking & autocomplete
