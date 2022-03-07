@@ -1,6 +1,6 @@
 # Webpack Candy loader
 
-Load css files as pure jsx components with classnames as boolean props
+Load css files as pure react jsx components with classnames as boolean props
 
 <div align="center">
 <img src="https://img.shields.io/github/workflow/status/iminside/candy-loader/Node.js%20CI/master" alt="GitHub Workflow Status (branch)" /> 
@@ -34,7 +34,7 @@ Update the loaders in your `webpack.config.js` file.
 Use classnames in camelCase mode
 
 ```css
-// style.css
+/* style.css */
 
 .message {
     font-size: 16px;
