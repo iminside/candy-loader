@@ -1,6 +1,6 @@
 {
     "name": "candy-loader",
-    "version": "0.1.1",
+    "version": "0.1.2",
     "description": "Load css as jsx components",
     "author": "Denis Churbanov",
     "license": "MIT",
