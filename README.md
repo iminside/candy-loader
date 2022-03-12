@@ -1,12 +1,14 @@
-# Webpack Candy loader
-
-Load css files as pure react jsx components with classnames as boolean props
+![](https://habrastorage.org/webt/xo/zq/sn/xozqsnyufkv3tporlvhkos_onqk.png)
 
 <div align="center">
 <img src="https://img.shields.io/github/workflow/status/iminside/candy-loader/Node.js%20CI/master" alt="GitHub Workflow Status (branch)" /> 
 <img src="https://img.shields.io/github/languages/top/iminside/candy-loader" alt="language" />
 <img src="https://img.shields.io/npm/l/candy-loader" alt="license" />  
 </div>
+
+# Webpack Candy loader
+
+Load css files as pure react jsx components with classnames as boolean props
 
 ## Install
 
