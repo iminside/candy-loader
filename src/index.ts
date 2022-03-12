@@ -56,7 +56,6 @@ export default async function loader(this: LoaderContext, source: string) {
             }) as any,
         }),
         postcssModules({
-            localsConvention: 'camelCaseOnly',
             getJSON: (_, json) => {
                 out.push(`const styles = ${JSON.stringify(json)}`)
 
