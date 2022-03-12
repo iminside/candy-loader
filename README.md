@@ -77,12 +77,10 @@ You can use the usual postcss config file
 ```js
 module.exports = {
     plugins: {
-        // enable autoprefixer plugin
-        autoprefixer: false,
+        autoprefixer: isProduction,
     },
     processOptions: {
-        // enable sourcemaps
-        map: true,
+        map: isDevelopment,
     },
 }
 ```
