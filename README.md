@@ -70,6 +70,52 @@ const Badge = (props: BadgeProps) => {
 }
 ```
 
+## Imports
+
+You can include css files and access their styles.
+
+```css
+/* styles.css */
+@import 'grid.css';
+
+.root {
+    /*...*/
+}
+```
+
+```tsx
+import { Div } from './styles.css'
+
+function Component(props) {
+    return (
+        <Div root col_xs_12 col_sm_8>
+            ...
+        </Div>
+    )
+}
+```
+
+## Pass css-variables
+
+If a property starts with a double underscore, then its value can be retrieved using `var()` on any class applied to the element.
+
+```tsx
+function Component(props) {
+    return (
+        <Div name __fontSize="14px">
+            John
+        </Div>
+    )
+}
+```
+
+```css
+.name {
+    color: black;
+    font-size: var(--fontSize);
+}
+```
+
 ## Based on `postcss`
 
 You can use the usual postcss config file
