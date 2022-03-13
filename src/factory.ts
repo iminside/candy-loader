@@ -9,7 +9,11 @@ export const createComponent = (tag: Tag, styles: Styles) => {
         const classNames = []
 
         for (const [key, val] of Object.entries(props)) {
-            if (key in styles) {
+            if (key === 'className') {
+                if (!!val) {
+                    classNames.push(val)
+                }
+            } else if (key in styles) {
                 if (val) {
                     classNames.push(styles[key])
                 }
@@ -18,7 +22,9 @@ export const createComponent = (tag: Tag, styles: Styles) => {
             }
         }
 
-        attributes.className = classNames.join(' ')
+        if (!!classNames.length) {
+            attributes.className = classNames.join(' ')
+        }
 
         return React.createElement(tag, attributes)
     }
