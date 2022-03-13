@@ -1,4 +1,4 @@
-![](https://habrastorage.org/webt/xo/zq/sn/xozqsnyufkv3tporlvhkos_onqk.png)
+![](https://habrastorage.org/webt/t2/i8/72/t2i872xwmelpxkvov0be1dgo5-q.png)
 
 <div align="center">
 <img src="https://img.shields.io/github/workflow/status/iminside/candy-loader/Node.js%20CI/master" alt="GitHub Workflow Status (branch)" /> 
