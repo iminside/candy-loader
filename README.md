@@ -100,6 +100,8 @@ function Component(props) {
 If a property starts with a double underscore, then its value can be retrieved using `var()` on any class applied to the element.
 
 ```tsx
+import { Div } from './styles.css'
+
 function Component(props) {
     return (
         <Div name __fontSize="14px">
@@ -113,6 +115,23 @@ function Component(props) {
 .name {
     color: black;
     font-size: var(--fontSize);
+}
+```
+
+## Get styles like css-modules
+
+```css
+.box {
+    width: 50px;
+    height: 50px;
+}
+```
+
+```tsx
+import styles from './styles.css'
+
+function Box(props) {
+    return <div className={styles.box}>...</div>
 }
 ```
 
