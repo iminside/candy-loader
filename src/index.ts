@@ -25,7 +25,6 @@ type PostcssUrlAsset = {
 }
 
 export default async function loader(this: LoaderContext, source: string) {
-    const callback = this.async()
     const { plugins, processOptions } = await loadConfig(this)
 
     const factoryPath = this.utils.contextify(this.context, require.resolve('./factory'))
@@ -70,11 +69,10 @@ export default async function loader(this: LoaderContext, source: string) {
         ...plugins,
     ]).process(source, processOptions)
 
-    out.push(`export default [[module.id, \`${css}\`]]`)
+    out.push(`const result = []`)
+    out.push(`result.push([module.id, \`${css}\`])`)
+    out.push(`result.locals = styles`)
+    out.push(`export default result`)
 
-    const result = out.join('\n')
-
-    // console.log(result)
-
-    callback(null, result)
+    return out.join('\n')
 }
